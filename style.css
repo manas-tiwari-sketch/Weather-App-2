@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.manas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Body styling */
+body {
+  background-image: url(./360_F_691870556_tccTWjV54NHaG201lGlLGZtCVLxRnrvT.webp);
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main container styling */
+main {
+  width: 80%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header styling */
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* Form styling */
+#searchBar {
+  margin-bottom: 20px;
+}
+
+#searchBar_form {
+  display: flex;
+  align-items: center;
+}
+
+#searchBar_text {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchBar_button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#searchBar_button:hover {
+  background-color: #0056b3;
+}
+
+/* Forecast sections */
+#currentForecast, #dailyForecast {
+  margin-top: 20px;
+}
+
+#currentForecast_conditions, #dailyForecast_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#currentForecast_conditions div, .forecastDay {
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#icon i {
+  font-size: 2em;
+}
+
+.temp {
+  font-size: 1em;
+}
+
+.unit {
+  font-size: 1em;
+}
+
+.desc, .feels, .maxtemp, .mintemp, .humidity, .wind {
+  margin-top: 1px;
+}
+
+/* Daily forecast */
+.forecastDay {
+  flex: 1;
+  text-align: center;
+}
+
+.dayAbbreviation {
+  font-weight: bold;
+}
+
+.dayHigh, .dayLow {
+  margin-top: 5px;
+}
+
+/* Skip link styling */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Button styling */
+.button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+/* Hidden elements for accessibility */
+.offscreen {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.none {
+  display: none;
+}

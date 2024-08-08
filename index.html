@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Weather App</h1>
+    <section id="searchBar">
+      <form id="searchBar_form">
+        <label for="searchBar_text">Enter a location</label>
+        <input id="searchBar_text" type="text" placeholder="City, State, Country" required>
+        <button id="searchBar_button" type="submit">Search</button>
+      </form>
+    </section>
+    <section id="currentForecast">
+      <h2>Current Conditions</h2>
+      <div id="currentForecast_conditions">
+        <div id="icon"></div>
+        <div id="temp">Curre Temperature</div>
+        <div id="desc">Weather Conditions</div>
+        <div id="feels">feels</div>
+        <div id="maxtemp">Maximum Temperature</div>
+        <div id="mintemp">Minimum Temperature</div>
+        <div id="humidity">Humidity</div>
+        <div id="wind">Wind</div>
+      </div>
+    </section>
+    <section id="dailyForecast">
+      <h2>Daily Forecast</h2>
+      <div id="dailyForecast_content"></div>
+    </section>
+    <script src="script.js"></script>
+  </main>
+  <h3 class="manas">Powered by Manas Tiwari</h3>
+</body>
+</html>
